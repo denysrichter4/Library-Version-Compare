@@ -1,15 +1,21 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.denysrichter4.libraryversioncompare</id>
-    <name>Library-Version-Compare</name>
-    <vendor>denysrichter4</vendor>
+    <name>Library Version Compare</name>
+    <version>1.0</version>
+    <vendor email="denysrichter4@gmail.com">Denys Richter</vendor>
+
+    <description>
+        Plugin to compare files between a remote library and the locally adapted version.
+    </description>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.denysrichter4.libraryversioncompare.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.denysrichter4.libraryversioncompare.startup.MyProjectActivity" />
+        <toolWindow id="Library Version Compare"
+                    anchor="left"
+                    factoryClass="com.github.denysrichter4.libraryversioncompare.actions.ToolWindowFactoryImpl"
+                    canCloseContents="true"
+                    canWorkInDumbMode="true"/>
     </extensions>
 </idea-plugin>
