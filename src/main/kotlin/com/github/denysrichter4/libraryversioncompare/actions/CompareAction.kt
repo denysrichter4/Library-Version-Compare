@@ -7,12 +7,10 @@ import com.intellij.icons.AllIcons
 import com.intellij.ide.util.PropertiesComponent
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
-import com.intellij.openapi.project.Project
 import com.intellij.openapi.ui.Messages
 import com.intellij.ui.components.JBList
 
 class CompareAction(
-    private val project: Project,
     private val list: JBList<FileDiffInfo> = JBList()
 ) : AnAction("Compare", "Libraries compare", AllIcons.Actions.Diff) {
     override fun actionPerformed(e: AnActionEvent) {
@@ -30,7 +28,6 @@ class CompareAction(
             properties.setValue("newTag", dialog.newTag)
 
             val comparator = LibraryComparator(
-                project,
                 dialog.repoPath,
                 dialog.adaptedPath,
                 dialog.oldTag,

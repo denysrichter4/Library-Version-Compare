@@ -5,11 +5,7 @@ import com.intellij.openapi.ui.DialogWrapper
 import com.intellij.openapi.ui.TextComponentAccessor
 import com.intellij.openapi.ui.TextFieldWithBrowseButton
 import java.awt.GridLayout
-import javax.swing.JComponent
-import javax.swing.JLabel
-import javax.swing.JOptionPane
-import javax.swing.JPanel
-import javax.swing.JTextField
+import javax.swing.*
 
 class CompareLibDialog(
     private val defaultRepoPath: String = "",
@@ -27,13 +23,13 @@ class CompareLibDialog(
         title = "Configure Library Comparison"
 
         repoPathField.addBrowseFolderListener(
-            "Select the library repository", null, null,
+             null,
             FileChooserDescriptorFactory.createSingleFolderDescriptor(),
             TextComponentAccessor.TEXT_FIELD_WHOLE_TEXT
         )
 
         adaptedPathField.addBrowseFolderListener(
-            "Select the folder for the locally adapted version", null, null,
+             null,
             FileChooserDescriptorFactory.createSingleFolderDescriptor(),
             TextComponentAccessor.TEXT_FIELD_WHOLE_TEXT
         )

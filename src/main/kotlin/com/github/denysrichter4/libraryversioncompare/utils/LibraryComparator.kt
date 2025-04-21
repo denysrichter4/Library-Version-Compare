@@ -1,10 +1,8 @@
 package com.github.denysrichter4.libraryversioncompare.utils
 
-import com.intellij.openapi.project.Project
 import java.io.File
 
 class LibraryComparator(
-    private val project: Project,
     private val repoPath: String,
     private val adaptedPath: String,
     private val oldTag: String,

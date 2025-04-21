@@ -48,7 +48,7 @@ class ToolWindowFactoryImpl : ToolWindowFactory {
         }
 
         val actionGroup = DefaultActionGroup()
-        actionGroup.add(CompareAction(project, fileList))
+        actionGroup.add(CompareAction(fileList))
         actionGroup.add(ClearAction(fileList))
 
         val actionToolbar: ActionToolbar = ActionManager.getInstance().createActionToolbar("LibraryVersionCompare", actionGroup, true)
