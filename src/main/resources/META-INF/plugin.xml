@@ -13,6 +13,7 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow id="Library Version Compare"
+                    icon="/icons/applyNotConflicts_dark.svg"
                     anchor="left"
                     factoryClass="com.github.denysrichter4.libraryversioncompare.actions.ToolWindowFactoryImpl"
                     canCloseContents="true"

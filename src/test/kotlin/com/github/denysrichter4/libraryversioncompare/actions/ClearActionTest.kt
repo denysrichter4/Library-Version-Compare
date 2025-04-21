@@ -3,8 +3,9 @@ package com.github.denysrichter4.libraryversioncompare.actions
 import com.github.denysrichter4.libraryversioncompare.model.FileDiffInfo
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.ui.components.JBList
-import org.junit.jupiter.api.Test
-import org.mockito.Mockito.*
+import org.junit.Test
+import org.mockito.Mockito.mock
+import org.mockito.Mockito.verify
 
 class ClearActionTest {
 

@@ -61,6 +61,7 @@ class ToolWindowFactoryImpl : ToolWindowFactory {
 
         val contentManager = toolWindow.contentManager
         val content = contentManager.factory.createContent(panel, "Differences", false)
+        content.isCloseable = false
         contentManager.addContent(content)
     }
 
