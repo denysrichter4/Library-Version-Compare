@@ -1,4 +1,4 @@
-# Library Version Compare Plugin
+# Library-Version-Compare
 
 ## 📖 Overview
 The **Library Version Compare Plugin** is an IntelliJ IDEA plugin designed to help developers compare different versions of a library. It provides an intuitive interface to identify differences between two versions of a library, making it easier to track changes and ensure compatibility.
@@ -47,20 +47,16 @@ Thank you for using the **Library Version Compare Plugin**! 😊
 - [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
 
 <!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
-
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be extracted by the [Gradle](/build.gradle.kts) during the build process.
-
-To keep everything working, do not remove `<!-- ... -->` sections.
+The **Library Version Compare Plugin** is an IntelliJ IDEA plugin designed to help developers compare different versions of a library. It provides an intuitive interface to identify differences between two versions of a library, making it easier to track changes and ensure compatibility.
 <!-- Plugin description end -->
 
 ## Installation
 
 - Using the IDE built-in plugin system:
-
+  
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "Library-Version-Compare"</kbd> >
   <kbd>Install</kbd>
-
+  
 - Using JetBrains Marketplace:
 
   Go to [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID) and install it by clicking the <kbd>Install to ...</kbd> button in case your IDE is running.
